@@ -9,8 +9,10 @@ import { LandingComponent } from './components/landing/landing.component';
 import { ProductsComponent } from './components/products/products.component';
 import { PanelTopComponent } from './components/panel-top/panel-top.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CartComponent } from './components/cart/cart.component';
 
 const appRoutes: Routes = [
+  { path: 'cart', component: CartComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'landing', component: LandingComponent },
   { path: '', redirectTo: '/landing', pathMatch: 'full' }
@@ -22,7 +24,8 @@ const appRoutes: Routes = [
     LandingComponent,
     ProductsComponent,
     PanelTopComponent,
-    FooterComponent
+    FooterComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
