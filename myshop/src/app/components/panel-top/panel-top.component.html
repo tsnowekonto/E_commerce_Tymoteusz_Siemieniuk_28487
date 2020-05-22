@@ -1,16 +1,20 @@
 <div>
-    <div style="display: flex;flex-direction: row;">
-        <img src="https://via.placeholder.com/100" alt="">
-        <h2>Software.pl</h2>
+  <div id="panel" style="display: flex;flex-direction: row;">
+    <div id="logo">
+      <i>S Z S</i>
+      <h2> sklep z softłerem</h2>
     </div>
-    <button routerLink="/adm_dashboard">Panel Administratora</button>
-    <div style="display: flex; justify-content: center;">
-        <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
-        <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
+        <div id="szukaj" >
+        <input type="text" [(ngModel)]="this.mainService.productsRequest.name" placeholder="Szukaj produktu">
+        <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products"><i class="fa fa-search"></i></button>
     </div>
-    <div>
-      <button id="cartBtn" routerLink="/cart">
+    <div id="koszyk">
+      <button id="cartBtn" routerLink="/cart"><i class="fa fa-shopping-cart" style="font-size: 50px; color: blue;"></i>
       {{getCartQuanity()}}
       </button>
       </div>
+  </div>
+  <div id="adm">
+    <button id="admBtn" routerLink="/adm_dashboard">Panel Administratora</button>
+  </div>
 </div>

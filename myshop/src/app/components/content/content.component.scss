@@ -1,0 +1,127 @@
+#c {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(259, 256, 256);
+}
+.container {
+  margin: 0 auto;
+  margin-top: 0;
+  position: relative;
+  width: 70%;
+  height: 100;
+  padding-bottom: 40%;
+  background: #4c4c4c;
+  border: solid 10px #2c2c2c;
+}
+.slide_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+.slide_img img {
+  width: 100%;
+  height: 100%
+}
+#i1, #i2, #i3 {
+  display: none;
+}
+.prev, .next {
+  width: 12%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(88,88,88,.4);
+  z-index: 99;
+  cursor: pointer;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+.nav {
+  width: 100%;
+  height: 11px;
+  bottom: 8%;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+}
+.dots {
+  top: -5px;
+  width: 1.5vw;
+  height: 1.5vw;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0,0,0,.4);
+}
+.slide_img {
+  z-index: -1;
+}
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three {
+  z-index: 9;
+}
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3 {
+  background: #fff;
+}
+.cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+#cont1 {
+  background:beige;
+  text-align: center;
+  border: solid red 4px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#cont1 h1 {
+  font-size: 3vw;
+}
+#cont1 h2 {
+  font-size: 2vw;
+  color: blue;
+}
+#cont2 {
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 2px 2px darkblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#cont2 h1 {
+  font-size: 3vw;
+}
+#cont3 {
+  background: rgb(247, 238, 224);
+  min-width: 50%;
+  text-align: center;
+  border: solid olivedrab 4px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#cont3 h1 {
+  color: rgb(255, 160, 10);
+  text-decoration: rgb(255, 160, 10) underline;
+  font-size: 3vw;
+}
+#cont3 h2 {
+  color: olivedrab;
+  font-size: 2vw;
+}
+#cont3 h3 {
+    color:rgb(255, 160, 10);
+    font-size: 1.5vw;
+}
